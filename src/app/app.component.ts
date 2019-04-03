@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'togglez-demo';
+  list: string[] = [];
+
+  constructor() {
+    for (let i = 0; i < 9; i++) {
+      this.list.push("item "+i);
+      
+    }
+  }
 }
