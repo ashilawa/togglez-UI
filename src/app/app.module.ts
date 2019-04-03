@@ -4,6 +4,7 @@ import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { PrimeNgSharedModule } from './modules/primeng/prime-ng-shared-module.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +18,7 @@ import { AppComponent } from './app.component';
     BrowserAnimationsModule,
     HttpClientModule,
     MDBBootstrapModule,
+    PrimeNgSharedModule,
     AppRoutingModule
   ],
   providers: [],

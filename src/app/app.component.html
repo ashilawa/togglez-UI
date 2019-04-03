@@ -3,12 +3,26 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
-  
+  <button pButton label="Test"></button>
 </div>
 <h2>List of festivals: </h2>
 <ul>
   <li *ngFor="let item of list">{{item}}</li>
   
 </ul>
+
+<div style="width: 100%; height: 300px; background-color: #bbcdda;">
+  <p-panel header="Festival List" [toggleable]="true"> 
+    <div class="ui-g">
+        <div *ngFor="let item of list" class="ui-g-2">
+            
+            <div>{{item}}</div>
+        </div>
+    </div> 
+    
+  </p-panel>
+
+</div>
+
 
 <router-outlet></router-outlet>
