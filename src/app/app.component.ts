@@ -9,14 +9,9 @@ import { FeatureToggleService } from './services/feature-toggle.service';
 })
 export class AppComponent {
   title = 'togglez-demo';
-  list: string[] = [];
 
-  constructor(featureToggleService: FeatureToggleService) {
-    for (let i = 0; i < 9; i++) {
-      this.list.push("item "+i);
-      
-    }
-
-
+  constructor(){
+    
   }
+  
 }
