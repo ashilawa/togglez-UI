@@ -1,4 +1,5 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
+import { FeatureToggleService } from './services/feature-toggle.service';
 
 @Component({
   selector: 'app-root',
@@ -10,10 +11,12 @@ export class AppComponent {
   title = 'togglez-demo';
   list: string[] = [];
 
-  constructor() {
+  constructor(featureToggleService: FeatureToggleService) {
     for (let i = 0; i < 9; i++) {
       this.list.push("item "+i);
       
     }
+
+
   }
 }
