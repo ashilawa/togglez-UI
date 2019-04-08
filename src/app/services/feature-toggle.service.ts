@@ -20,7 +20,7 @@ export class FeatureToggleService {
   
   constructor(private httpClient: HttpClient) { }
 
-  public getFeatures(): Observable<Feature> {
+  public getFeatures(): Observable<Feature[]> {
     const endpointUrl = environment.serverUrl.concat('getAllFeatures');
     return this.httpClient.get<any>(endpointUrl, this.httpOptions);
   }

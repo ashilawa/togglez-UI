@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { AdminComponent } from './admin/admin.component';
+import { ActiveFeaturePipe } from './pipes/active-feature.pipe';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { AdminComponent } from './admin/admin.component';
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    AdminComponent
+    AdminComponent,
+    ActiveFeaturePipe
   ],
   imports: [
     BrowserModule, 
